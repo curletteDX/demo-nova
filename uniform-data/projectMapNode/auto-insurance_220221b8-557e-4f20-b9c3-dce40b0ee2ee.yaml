@@ -1,0 +1,9 @@
+id: 220221b8-557e-4f20-b9c3-dce40b0ee2ee
+name: Auto Insurance
+order: 400
+path: /:locale/auto-insurance
+type: composition
+pathSegment: auto-insurance
+data: {}
+compositionId: bf47c359-0b05-475c-bbb4-08ba7660386a
+projectMapId: 3828ecc0-8088-4983-a764-ba4b1092ac0a

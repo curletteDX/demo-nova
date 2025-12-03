@@ -1,7 +1,8 @@
 // Global styles and application setup
 import "@/styles/globals.css";
 import Head from 'next/head'; // Next.js head management
-import { Outfit, JetBrains_Mono } from "next/font/google"; // Google Fonts
+import { Inter, Geist_Mono } from "next/font/google"; // Google Fonts
+import { Analytics } from "@vercel/analytics/next"; // Vercel Analytics
 import createUniformContext from "@/uniformContext/context"; // Uniform context creation
 import { UniformAppProps } from "@uniformdev/context-next"; // Uniform Next.js integration
 import { UniformContext } from "@uniformdev/context-react"; // Uniform React context
@@ -10,24 +11,23 @@ import type { RootComponentInstance } from '@uniformdev/canvas'; // Uniform comp
 
 /**
  * Font Configuration - Google Fonts Setup
- * 
+ *
  * Using Next.js font optimization for better performance:
- * - Outfit: Main UI font (clean, modern sans-serif)
- * - JetBrains Mono: Code/monospace font (for technical content)
- * 
+ * - Inter: Main UI font (clean, professional sans-serif)
+ * - Geist Mono: Code/monospace font (for technical content)
+ *
  * CSS Variables:
- * - --font-outfit: Available in CSS as var(--font-outfit)
- * - --font-jetbrains-mono: Available in CSS as var(--font-jetbrains-mono)
+ * - --font-inter: Available in CSS as var(--font-inter)
+ * - --font-geist-mono: Available in CSS as var(--font-geist-mono)
  */
-const outfit = Outfit({
+const inter = Inter({
   subsets: ["latin"], // Character subset to load
-  variable: "--font-outfit", // CSS variable name
-  weight: ["300", "400", "500", "600", "700", "800"], // Available font weights
+  variable: "--font-inter", // CSS variable name
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+  variable: "--font-geist-mono",
 });
 
 // Create Uniform context for client-side operations
@@ -35,23 +35,23 @@ const clientContext = createUniformContext();
 
 /**
  * Next.js App Component - Application Root
- * 
+ *
  * This is the root component that wraps every page in the application.
  * It sets up global providers, fonts, metadata, and Uniform context.
- * 
+ *
  * Key Responsibilities:
  * - Global CSS injection
  * - SEO metadata management (title, description, keywords)
- * - Font loading and CSS variable setup  
+ * - Font loading and CSS variable setup
  * - Uniform context provider setup
  * - Mobile menu state management
  * - Server/client context handling
- * 
+ *
  * Metadata Handling:
  * - Extracts page metadata from Uniform composition parameters
  * - Sets HTML title, meta description, and keywords
  * - Provides fallback values for better SEO
- * 
+ *
  * Provider Hierarchy:
  * 1. MobileMenuProvider: Mobile navigation state
  * 2. UniformContext: Uniform CMS context and personalization
@@ -63,15 +63,15 @@ export default function App({
   serverUniformContext, // Uniform context from server-side
 }: UniformAppProps<{ data: RootComponentInstance }>) {
   const outputType = "standard"; // Uniform output type for rendering
-  
+
   // Extract composition data for metadata
   const { data: composition } = pageProps || {};
   const { pageTitle, pageMetaDescription, pageKeywords } = composition?.parameters || {};
-  
+
   // Extract metadata values with fallbacks
-  const title = (pageTitle?.value as string) || 'Uniform Next.js Starter';
-  const description = (pageMetaDescription?.value as string) || 'A clean, elegant Next.js starter project integrated with Uniform headless CMS';
-  const keywords = (pageKeywords?.value as string) || 'uniform, cms, nextjs, headless, content management';
+  const title = (pageTitle?.value as string) || 'Nova Insurance - Affordable Coverage for Everyone';
+  const description = (pageMetaDescription?.value as string) || 'Get the insurance coverage you need at prices you can afford. Auto, home, life, and more.';
+  const keywords = (pageKeywords?.value as string) || 'insurance, auto insurance, home insurance, life insurance, affordable coverage';
 
   return (
     <>
@@ -83,7 +83,7 @@ export default function App({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       {/* Application Providers and Layout */}
       <MobileMenuProvider>
         <UniformContext
@@ -91,10 +91,11 @@ export default function App({
           outputType={outputType}
         >
           {/* Font CSS variables wrapper */}
-          <div className={`${outfit.variable} ${jetbrainsMono.variable}`}>
+          <div className={`${inter.variable} ${geistMono.variable} font-sans`}>
             {/* Render the current page component */}
             <Component {...pageProps} />
           </div>
+          <Analytics />
         </UniformContext>
       </MobileMenuProvider>
     </>

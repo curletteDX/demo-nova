@@ -1,0 +1,22 @@
+id: insuranceArticleBySlug
+displayName: Insurance Article by Slug
+ttl: 30
+path: /single-by-slug
+custom:
+  maxDepth: 3
+  proposedName: Insurance Article
+  allowedContentTypes:
+    - insuranceArticle
+method: GET
+purgeKey: 7a3b8c9d-1e2f-4a5b-6c7d-8e9f0a1b2c3d
+archetype: singleEntryBySlug
+variables:
+  slug:
+    type: text
+    default: ''
+  locale:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []
+

@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqItem
+name: FAQ Item
+icon: screen
+parameters:
+  - id: question
+    name: Question
+    type: text
+    guidance: The FAQ question, e.g. 'What types of insurance do you offer?'
+    typeConfig:
+      required: true
+    localizable: true
+  - id: answer
+    name: Answer
+    type: richText
+    guidance: The detailed answer to the FAQ question
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+description: A single FAQ item with question and answer for accordion display
+useTeamPermissions: true
+slots: []
+titleParameter: question
+canBeComposition: false
+created: '2025-12-01T16:13:10.253168+00:00'
+updated: '2025-12-01T16:13:10.253168+00:00'

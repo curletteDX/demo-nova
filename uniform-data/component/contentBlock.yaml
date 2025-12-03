@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: contentBlock
+name: Content Block
+icon: screen
+parameters:
+  - id: content
+    name: Content
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+description: Content section with paragraphs and expandable accordion for Nova Insurance
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2025-12-01T15:41:02.268772+00:00'
+updated: '2025-12-01T16:23:39.16184+00:00'

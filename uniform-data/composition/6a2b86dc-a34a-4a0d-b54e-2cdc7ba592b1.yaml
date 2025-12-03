@@ -1,0 +1,549 @@
+composition:
+  _name: Nova Insurance Home
+  _id: 6a2b86dc-a34a-4a0d-b54e-2cdc7ba592b1
+  type: page
+  _overrides:
+    6a2b86dc-a34a-4a0d-b54e-2cdc7ba592b1:
+      parameters:
+        pageTitle:
+          type: text
+          value: Nova Insurance - Affordable Coverage for Everyone
+    6a2b86dc-a34a-4a0d-b54e-2cdc7ba592b1|2b6df8ad-195e-4fb0-80c7-347123787fa7:
+      slots:
+        $slotSectionItems:
+          - _id: b39bce10-728b-4cd3-ba58-8a5948ac697c
+            type: heroBanner
+            parameters:
+              image:
+                type: asset
+                value:
+                  - _id: 316baa4b-09ed-4876-a6cd-d73890addd14
+                    type: image
+                    fields:
+                      id:
+                        type: text
+                        value: 77274024-32cf-468a-a74e-f304f7a90736
+                      url:
+                        value: >-
+                          https://img.uniform.global/p/rDCYB-OKRcOHSp2ZB2QwfQ/ZjK2W2WAS8Cpo9b7HEARUA-Young_Adult_Driver.png
+                        type: text
+                      file:
+                        type: file
+                        value: cf922bff-e381-441d-9973-4f3a4ffb5017
+                      size:
+                        value: 83512
+                        type: number
+                      title:
+                        type: text
+                        value: Young_Adult_Driver.png
+                      width:
+                        value: 1100
+                        type: number
+                      height:
+                        value: 396
+                        type: number
+                      mediaType:
+                        value: image/png
+                        type: text
+                    _source: uniform-assets
+              title:
+                type: text
+                value: Protect What Matters Most
+              subtitle:
+                type: text
+                value: >-
+                  Get the insurance coverage you need at prices you can afford.
+                  Auto, home, life, and more.
+              showQuoteForm:
+                type: checkbox
+                value: 'true'
+          - _id: fd087ab9-8801-4f7f-afab-df99548cef31
+            type: contentBlock
+            parameters:
+              content:
+                type: richText
+                locales:
+                  en-US:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - tag: h1
+                          type: heading
+                          format: left
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                How Does Driving Experience Impact Insurance
+                                Rates?
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                When you first get your driver's license, your
+                                lack of experience creates more expensive car
+                                insurance premiums. Inexperienced drivers are
+                                historically more likely to get involved in an
+                                accident and file an insurance claim. Because of
+                                this, insurance companies charge more for an
+                                inexperienced driver's car insurance policy than
+                                they do for more experienced operators.
+                                Insurance is a business that assesses risk to
+                                offer car insurance, and if you pose a bigger
+                                risk than someone else, you are charged a higher
+                                insurance premium. In addition to your lack of
+                                experience, if you apply for your first car
+                                insurance policy, you will incur an additional
+                                surcharge for not having prior insurance. Even
+                                though your first car insurance policy may cost
+                                you more than you expect, there are ways to find
+                                affordable car insurance no matter what kind of
+                                driver you are.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - tag: h1
+                          type: heading
+                          format: left
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: How to Get Auto Insurance for Young Drivers
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: "Teen drivers are especially high risk when it comes to car insurance policies. If you are a teen driver looking for\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - link:
+                                path: https://www.amaxinsurance.com/auto-insurance
+                                type: url
+                              type: link
+                              format: ''
+                              indent: 0
+                              version: 1
+                              children:
+                                - mode: normal
+                                  text: affordable car insurance
+                                  type: text
+                                  style: ''
+                                  detail: 0
+                                  format: 0
+                                  version: 1
+                              direction: ltr
+                            - mode: normal
+                              text: >-
+                                , it may be best to talk to your parents about
+                                being added to their current insurance policy.
+                                In doing this, you will typically find your car
+                                insurance premium is less than if you were to
+                                purchase your own car insurance policy. When you
+                                are added to your parents' insurance policy, you
+                                benefit from the lower rates they are receiving
+                                for being more experienced drivers and discounts
+                                they may have, such as multi-car, tenure
+                                credits, and possibly a homeownership or
+                                bundling discount. If you purchase your own auto
+                                insurance policy, you will find your insurance
+                                costs are higher because you will be charged for
+                                your lack of experience and prior insurance.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - tag: h2
+                          type: heading
+                          format: left
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: How to Save on Car Insurance for New Drivers
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Car insurance can be expensive for any new
+                                driver, but there are ways to trim back your
+                                insurance costs even if you are a new teen
+                                driver. Many insurance companies offer all types
+                                of discounts to maximize your savings and ensure
+                                you get all of the car insurance discounts you
+                                are eligible for. These discounts include:
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: •
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: "Good Student Credit:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                This is a discount awarded to drivers under 25
+                                who are enrolled full-time in school and have a
+                                grade point average of 3.0 (B) or higher.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: '• Driver Training Discount:'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_If you have completed an optional driver training program, you usually qualify for a credit."
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: "• Distant Student Credit:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                If you are a student and attend a school that is
+                                more than 100 miles away from your home and you
+                                do not have a car on campus, you can qualify for
+                                a distant student credit because you will not
+                                have access to a vehicle full-time.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: "• Tracking Device Credit:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                Most auto insurance companies offer a discount
+                                if you sign up to use their mobile app or
+                                install a small device in your car that reads
+                                your driving activity and reports back to the
+                                insurer.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: •
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: "Billing Discounts:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                If you are willing to pay your auto insurance
+                                policy in full when you purchase it, or allow
+                                the insurance company to directly debit your
+                                checking account or charge your credit card for
+                                your monthly premiums, there is usually a
+                                discount through your car insurance carrier.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: •
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: "Homeownership Discount:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                Some car insurance carriers will give you a
+                                discount if you own a home.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: •
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                            - mode: normal
+                              text: 'Bundling Discount:'
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: "\_If you have a home or renter's insurance policy with the same insurance carrier through which you purchase your auto insurance, you will be eligible for a bundling discount, saving you up to 20% on your car insurance premium."
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: "• Veteran Discount:\_"
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 1
+                              version: 1
+                            - mode: normal
+                              text: >-
+                                If you are serving or have served in the U.S.
+                                military, your car insurer may offer you a
+                                discount for your service to your country.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                It is important to ask your insurance agent or
+                                company about all of the available discounts on
+                                your auto insurance policy so that you can
+                                ensure that you're getting affordable car
+                                insurance without compromising your coverage.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: ltr
+                          textStyle: ''
+                          textFormat: 0
+                      direction: ltr
+          - _id: df913cdb-c144-4cb8-8fab-465d9e1895c0
+            type: faq
+            slots:
+              faqItems:
+                - _id: 3157033c-b6ef-4dd9-83ae-20fd971ef71e
+                  type: faqItem
+                  parameters:
+                    answer:
+                      type: richText
+                      locales:
+                        en-US:
+                          root:
+                            type: root
+                            format: ''
+                            indent: 0
+                            version: 1
+                            children:
+                              - type: paragraph
+                                format: ''
+                                indent: 0
+                                version: 1
+                                children:
+                                  - mode: normal
+                                    text: This is an answer
+                                    type: text
+                                    style: ''
+                                    detail: 0
+                                    format: 0
+                                    version: 1
+                                direction: ltr
+                                textStyle: ''
+                                textFormat: 0
+                            direction: ltr
+                    question:
+                      type: text
+                      locales:
+                        en-US: This is a question
+            parameters:
+              title:
+                type: text
+                locales:
+                  en-US: FAQ
+  _locales:
+    - en-US
+  _pattern: d073b2b5-09db-484a-9ad3-e35e1f2650f0
+created: '2025-12-01T15:47:12.56762+00:00'
+modified: '2025-12-01T16:38:26.693672+00:00'
+pattern: false

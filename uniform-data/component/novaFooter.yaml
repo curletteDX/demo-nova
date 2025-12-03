@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: novaFooter
+name: Nova Footer
+icon: screen
+parameters:
+  - id: tagline
+    name: Tagline
+    type: text
+    guidance: Footer tagline text displayed below the logo
+    typeConfig:
+      required: false
+    localizable: true
+description: >-
+  Nova Insurance branded footer with logo, links, social media, and floating
+  chat button
+useTeamPermissions: true
+slots: []
+titleParameter: tagline
+canBeComposition: false
+created: '2025-12-03T08:39:11.362566+00:00'
+updated: '2025-12-03T08:39:11.362566+00:00'

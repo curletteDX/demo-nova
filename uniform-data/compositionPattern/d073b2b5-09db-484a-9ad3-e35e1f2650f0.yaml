@@ -1,0 +1,135 @@
+composition:
+  _name: Nova Insurance Page
+  _id: d073b2b5-09db-484a-9ad3-e35e1f2650f0
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Nova Insurance Page
+  slots:
+    body:
+      - _id: 2b6df8ad-195e-4fb0-80c7-347123787fa7
+        type: $slotSection
+    footer:
+      - _id: 7ebc5371-8beb-4241-bd4f-4c94e0a04e5d
+        type: novaFooter
+        parameters:
+          tagline:
+            type: text
+            value: Trusted by over 120,000 policyholders. We're here for you.
+    header:
+      - _id: 9f2e74e9-112d-4119-9c66-e1ded38fa722
+        type: novaHeader
+        slots:
+          topBar:
+            - _id: 86bdb127-12fd-4a25-bd82-0724014c68f9
+              type: novaTopBar
+              slots:
+                actionButtons:
+                  - _id: 6534edab-0893-4915-bc81-c913350659fc
+                    type: topBarButton
+                    parameters:
+                      label:
+                        type: text
+                        value: Make a Payment
+                      variant:
+                        type: select
+                        value: primary
+                  - _id: 172b65ad-5f2c-478a-8e45-8c9420d165bb
+                    type: topBarButton
+                    parameters:
+                      label:
+                        type: text
+                        value: Make a Claim
+                      variant:
+                        type: select
+                        value: secondary
+                  - _id: 9089f225-ff69-40c2-8abc-6afc959dc0f1
+                    type: topBarButton
+                    parameters:
+                      label:
+                        type: text
+                        value: Nova Rewards
+                      variant:
+                        type: select
+                        value: secondary
+                  - _id: 2fd57e6e-35ed-403a-95c6-11444b4cebf3
+                    type: topBarButton
+                    parameters:
+                      label:
+                        type: text
+                        value: Refer a Friend
+                      variant:
+                        type: select
+                        value: primary
+          mainNav:
+            - _id: 795c6c96-8e8d-48d7-8e16-2163d89c9c5d
+              type: novaMainNav
+              slots:
+                aboutLinks:
+                  - _id: 8d7095de-d316-43f0-9941-d41bcac110ce
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: About Us
+                  - _id: db69f372-44b4-4967-adaf-3984e631fbfa
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Careers
+                  - _id: 2677ea23-63c6-41fd-8b07-5fc38f52e561
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: News
+                  - _id: 2d975fce-a93f-4985-8007-312832f95c36
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Contact Us
+                insuranceLinks:
+                  - _id: 3fec17e8-d23a-49f5-9fe9-d210aac91c0a
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Auto Insurance
+                  - _id: 9eb727d7-c34f-4da7-9b4b-f3482f6aae21
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Home Insurance
+                  - _id: 549f58fb-f9dc-44c7-abe5-504207d9dcab
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Life Insurance
+                  - _id: a683f7a7-7b93-42a6-8b6e-c58338296ab0
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Business Insurance
+                  - _id: a7b5c336-b3ad-4374-8d0b-7461d0b9b16a
+                    type: navDropdownLink
+                    parameters:
+                      label:
+                        type: text
+                        value: Renters Insurance
+              parameters:
+                phoneNumber:
+                  type: text
+                  value: 1-800-555-NOVA
+  _overridability:
+    parameters:
+      pageTitle: 'yes'
+    hideLockedParameters: true
+created: '2025-12-01T15:45:26.42557+00:00'
+modified: '2025-12-03T08:39:56.313394+00:00'
+pattern: true

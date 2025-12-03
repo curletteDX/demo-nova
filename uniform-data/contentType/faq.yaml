@@ -1,0 +1,22 @@
+id: faq
+name: FAQ
+created: '2025-12-01T16:20:25.800864+00:00'
+updated: '2025-12-01T16:20:25.800864+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: question
+    name: Question
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: answer
+    name: Answer
+    type: text
+    typeConfig: null
+    localizable: true
+entryName: question
+icon: file-document
+type: block
+permissions: []
+previewConfigurations: []

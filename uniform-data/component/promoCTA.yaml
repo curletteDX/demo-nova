@@ -1,0 +1,57 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: promoCTA
+name: Promo CTA
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Main headline for the promo section
+    typeConfig:
+      required: true
+    localizable: true
+  - id: subtitle
+    name: Subtitle
+    type: text
+    guidance: Optional subtitle text displayed below the title
+    typeConfig:
+      required: false
+    localizable: true
+  - id: buttonText
+    name: Button Text
+    type: text
+    guidance: Text displayed on the CTA button
+    typeConfig:
+      required: true
+    localizable: true
+  - id: buttonHref
+    name: Button Link
+    type: link
+    guidance: URL the button links to
+  - id: imagePosition
+    name: Image Position
+    type: select
+    guidance: Position of the image relative to the content
+    typeConfig:
+      options:
+        - text: Left
+          value: left
+        - text: Right
+          value: right
+  - id: image
+    name: Image
+    type: asset
+    guidance: >-
+      Optional image to display. If not provided, the buildings illustration
+      will be shown.
+    typeConfig:
+      allowedTypes:
+        - image
+description: Promotional call-to-action section with image and content
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2025-12-03T08:39:31.255588+00:00'
+updated: '2025-12-03T08:54:01.496168+00:00'

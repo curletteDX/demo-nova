@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: novaHeader
+name: Nova Header
+icon: screen
+parameters: []
+description: Nova Insurance header combining TopBar and MainNav
+useTeamPermissions: true
+slots:
+  - id: topBar
+    name: Top Bar
+    maxComponents: 1
+    allowedComponents:
+      - novaTopBar
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: mainNav
+    name: Main Nav
+    maxComponents: 1
+    allowedComponents:
+      - novaMainNav
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+canBeComposition: false
+created: '2025-12-01T15:40:46.281616+00:00'
+updated: '2025-12-01T15:40:46.281616+00:00'

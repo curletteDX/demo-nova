@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: startSaving
+name: Start Saving
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section heading text like 'Let's Start Saving'
+    typeConfig:
+      required: false
+    localizable: true
+  - id: showAccent
+    name: Show Accent
+    type: checkbox
+    guidance: Show the golden triangle accent in the top left
+  - id: callHref
+    name: Call Phone Number
+    type: text
+    guidance: 'Phone number for the Call Us button (tel: format)'
+  - id: textHref
+    name: Text Phone Number
+    type: text
+    guidance: 'Phone number for the Text Us button (sms: format)'
+  - id: messageHref
+    name: Message Link
+    type: text
+    guidance: URL for the Message Us button
+description: Contact section with call, text, and message options for Nova Insurance
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2025-12-03T08:39:16.93297+00:00'
+updated: '2025-12-03T08:39:16.93297+00:00'

@@ -1,0 +1,9 @@
+id: 9880705c-47a3-4ab8-8a03-f00a5e6e4117
+name: Nova Insurance Home
+order: 600
+path: /nova-home
+type: composition
+pathSegment: nova-home
+data: {}
+compositionId: 6a2b86dc-a34a-4a0d-b54e-2cdc7ba592b1
+projectMapId: 3828ecc0-8088-4983-a764-ba4b1092ac0a

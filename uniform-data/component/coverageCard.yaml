@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coverageCard
+name: Coverage Card
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Coverage type title (e.g., 'Uninsured/Underinsured Motorist Coverage')
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Detailed description of this coverage type
+    typeConfig:
+      required: true
+    localizable: true
+description: White card with golden triangle accent for displaying coverage information
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2025-12-03T09:01:05.277781+00:00'
+updated: '2025-12-03T09:01:05.277781+00:00'

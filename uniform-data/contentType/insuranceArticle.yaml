@@ -1,0 +1,121 @@
+id: insuranceArticle
+name: Insurance Article
+created: '2025-12-01T16:49:01.465302+00:00'
+updated: '2025-12-01T16:49:01.465302+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    guidance: Article headline
+    typeConfig:
+      required: true
+    localizable: true
+  - id: slug
+    name: Slug
+    type: text
+    guidance: URL-friendly identifier, e.g. 'auto-insurance-for-new-drivers'
+    typeConfig:
+      required: true
+    localizable: false
+  - id: excerpt
+    name: Excerpt
+    type: text
+    guidance: Short summary for article listings (1-2 sentences)
+    typeConfig:
+      required: false
+    localizable: true
+  - id: content
+    name: Content
+    type: richText
+    guidance: Main article body with full formatting
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: featuredImage
+    name: Featured Image
+    type: asset
+    guidance: Hero/thumbnail image for the article
+    typeConfig:
+      required: false
+      allowedTypes:
+        - image
+    localizable: false
+  - id: author
+    name: Author
+    type: text
+    guidance: Author name
+    typeConfig:
+      required: false
+    localizable: true
+  - id: category
+    name: Category
+    type: select
+    guidance: Insurance category
+    typeConfig:
+      options:
+        - text: Auto Insurance
+          value: auto
+        - text: Home Insurance
+          value: home
+        - text: Life Insurance
+          value: life
+        - text: Business Insurance
+          value: business
+        - text: Renters Insurance
+          value: renters
+        - text: General
+          value: general
+      required: false
+    localizable: false
+  - id: tags
+    name: Tags
+    type: text
+    guidance: Comma-separated tags for filtering
+    typeConfig:
+      required: false
+    localizable: true
+  - id: publishDate
+    name: Publish Date
+    type: date
+    guidance: Article publish date
+    typeConfig:
+      required: false
+    localizable: false
+entryName: title
+thumbnailField: featuredImage
+description: Article content for Nova Insurance knowledge base and blog
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: insuranceArticlePage
+name: Insurance Article Page
+icon: screen
+parameters:
+  - id: article
+    name: Article
+    type: contentReference
+    guidance: Select an Insurance Article to display
+    typeConfig:
+      isMulti: false
+      required: true
+      allowedContentTypes:
+        - insuranceArticle
+description: Full article display component that renders an Insurance Article entry
+useTeamPermissions: true
+slots:
+  - id: faqItems
+    name: FAQ Items
+    allowedComponents:
+      - faqItem
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+canBeComposition: false
+created: '2025-12-01T16:49:10.99357+00:00'
+updated: '2025-12-01T16:49:10.99357+00:00'

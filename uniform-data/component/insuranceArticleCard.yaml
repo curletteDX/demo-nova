@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: insuranceArticleCard
+name: Insurance Article Card
+icon: screen
+parameters:
+  - id: article
+    name: Article
+    type: contentReference
+    guidance: Select an Insurance Article to display as a card
+    typeConfig:
+      isMulti: false
+      required: true
+      allowedContentTypes:
+        - insuranceArticle
+description: Compact card for article listings with image, title, and excerpt
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2025-12-01T16:49:18.265596+00:00'
+updated: '2025-12-01T16:49:18.265596+00:00'

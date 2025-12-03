@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: insuranceArticleList
+name: Insurance Article List
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Optional section title, e.g. 'Latest Articles'
+    typeConfig:
+      required: false
+    localizable: true
+  - id: columns
+    name: Columns
+    type: select
+    guidance: Number of columns in the grid
+    typeConfig:
+      options:
+        - text: 2 Columns
+          value: '2'
+        - text: 3 Columns
+          value: '3'
+        - text: 4 Columns
+          value: '4'
+      required: false
+description: Grid/list of article cards for displaying multiple articles
+useTeamPermissions: true
+slots:
+  - id: articles
+    name: Articles
+    allowedComponents:
+      - insuranceArticleCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2025-12-01T16:49:27.698739+00:00'
+updated: '2025-12-01T16:49:27.698739+00:00'

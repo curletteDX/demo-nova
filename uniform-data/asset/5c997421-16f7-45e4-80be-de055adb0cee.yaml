@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 5c997421-16f7-45e4-80be-de055adb0cee
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: young-adult-driver-png.jpeg
+    file:
+      type: file
+      value: 3464a4e1-1ed1-48c1-adb3-af5749d1c189
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/rDCYB-OKRcOHSp2ZB2QwfQ/w9_paMioRBWAI0d_-Qytug-young-adult-driver-png.jpeg
+      type: text
+    size:
+      value: 69546
+      type: number
+    width:
+      value: 1100
+      type: number
+    height:
+      value: 396
+      type: number
+    custom: {}
+created: '2025-12-01T16:33:27.224966+00:00'
+modified: '2025-12-01T16:33:27.224966+00:00'

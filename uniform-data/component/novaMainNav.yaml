@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: novaMainNav
+name: Nova Main Nav
+icon: screen
+parameters:
+  - id: phoneNumber
+    name: Phone Number
+    type: text
+    guidance: Phone number to display, e.g. '1-800-555-NOVA'
+    typeConfig:
+      required: false
+  - id: signInUrl
+    name: Sign In URL
+    type: link
+    guidance: URL for the sign in button
+    typeConfig:
+      required: false
+  - id: locationsUrl
+    name: Locations URL
+    type: link
+    guidance: URL for the Find an Office link
+    typeConfig:
+      required: false
+description: >-
+  Main navigation with logo, dropdowns, phone number and sign-in for Nova
+  Insurance
+useTeamPermissions: true
+slots:
+  - id: insuranceLinks
+    name: Insurance Links
+    allowedComponents:
+      - navDropdownLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+  - id: aboutLinks
+    name: About Links
+    allowedComponents:
+      - navDropdownLink
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: phoneNumber
+canBeComposition: false
+created: '2025-12-01T15:40:40.275051+00:00'
+updated: '2025-12-01T15:40:40.275051+00:00'

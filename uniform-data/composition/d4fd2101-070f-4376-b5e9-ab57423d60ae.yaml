@@ -36,10 +36,6 @@ composition:
                 type: text
                 locales:
                   en-US: ${#jptr:/Article by Slug Content/entry/fields/title/value}
-              excerpt:
-                type: richText
-                locales:
-                  en-US: ${#jptr:/Article by Slug Content/entry/fields/excerpt/value}
               category:
                 type: select
                 value: ${#jptr:/Article by Slug Content/entry/fields/category/value}
@@ -70,6 +66,10 @@ composition:
                 type: richText
                 locales:
                   en-US: ${#jptr:/Article by Slug Content/entry/fields/content/value}
+              excerpt:
+                type: text
+                locales:
+                  en-US: ${#jptr:/Article by Slug Content/entry/fields/excerpt/value}
           - _id: 0b9a93e2-3c33-4432-adf8-c6a821ca15ea
             type: articleTags
             parameters:
@@ -120,6 +120,6 @@ composition:
   _locales:
     - en-US
   _pattern: 9a0d09c6-6e05-4424-875c-fef893bc73b7
-created: '2025-09-18T15:00:04.690722+00:00'
-modified: '2025-09-18T15:39:29.762408+00:00'
+created: '2025-12-01T11:59:26.574414+00:00'
+modified: '2025-12-03T05:52:57.80247+00:00'
 pattern: false

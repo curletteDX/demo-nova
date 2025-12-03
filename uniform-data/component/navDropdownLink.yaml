@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: navDropdownLink
+name: Nav Dropdown Link
+icon: screen
+parameters:
+  - id: label
+    name: Label
+    type: text
+    guidance: Link text, e.g. 'Auto Insurance'
+    typeConfig:
+      required: true
+    localizable: true
+  - id: href
+    name: URL
+    type: link
+    guidance: Link destination URL
+    typeConfig:
+      required: true
+description: Link item for navigation dropdowns in Nova Insurance header
+useTeamPermissions: true
+slots: []
+titleParameter: label
+canBeComposition: false
+created: '2025-12-01T15:40:25.683665+00:00'
+updated: '2025-12-01T15:40:25.683665+00:00'

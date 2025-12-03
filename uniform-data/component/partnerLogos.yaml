@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: partnerLogos
+name: Partner Logos
+icon: screen
+parameters:
+  - id: showAccent
+    name: Show Accent
+    type: checkbox
+    guidance: Show the golden triangle accent in the top left corner
+description: Display partner/carrier logos in a horizontal row
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2025-12-03T08:39:25.281875+00:00'
+updated: '2025-12-03T08:39:25.281875+00:00'

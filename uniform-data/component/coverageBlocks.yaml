@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: coverageBlocks
+name: Coverage Blocks
+icon: screen
+parameters:
+  - id: sectionTitle
+    name: Section Title
+    type: text
+    guidance: Optional title displayed above the coverage blocks
+    typeConfig:
+      required: false
+    localizable: true
+  - id: showSectionAccent
+    name: Show Section Accent
+    type: checkbox
+    guidance: Show the subtle triangle watermark in bottom right
+description: Grid of coverage information cards with golden accents
+useTeamPermissions: true
+slots:
+  - id: blocks
+    name: Coverage Cards
+    allowedComponents:
+      - coverageCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: sectionTitle
+canBeComposition: false
+created: '2025-12-03T08:39:27.531642+00:00'
+updated: '2025-12-03T09:01:12.989438+00:00'

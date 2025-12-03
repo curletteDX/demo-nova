@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqSection
+name: FAQ Section
+icon: screen
+parameters:
+  - id: title
+    name: Title
+    type: text
+    guidance: Section title like 'Frequently Asked Questions'
+    typeConfig:
+      required: false
+    localizable: true
+description: Frequently Asked Questions section with expandable accordion items
+useTeamPermissions: true
+slots:
+  - id: faqItems
+    name: FAQ Items
+    allowedComponents:
+      - faqItem
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: title
+canBeComposition: false
+created: '2025-12-03T08:39:18.802613+00:00'
+updated: '2025-12-03T08:39:18.802613+00:00'

@@ -1,0 +1,129 @@
+composition:
+  _name: Auto Insurance
+  _id: bf47c359-0b05-475c-bbb4-08ba7660386a
+  _slug: auto-insurance
+  type: page
+  _overrides:
+    bf47c359-0b05-475c-bbb4-08ba7660386a|2b6df8ad-195e-4fb0-80c7-347123787fa7:
+      slots:
+        $slotSectionItems:
+          - _id: f504ec9a-24e1-420b-926e-f3923d0cb3a3
+            type: promoCTA
+            slots:
+              image:
+                - _id: 2ce6f336-5ceb-4fbb-97fe-e564f43dd50a
+                  type: image
+                  parameters:
+                    image:
+                      type: asset
+                      value:
+                        - _id: 0480b060-6a0e-4c78-89a5-64be04aab18a
+                          type: image
+                          fields:
+                            id:
+                              type: text
+                              value: 113aad68-6ca2-4c64-97f5-b6f1c4f40895
+                            url:
+                              value: >-
+                                https://img.uniform.global/p/rDCYB-OKRcOHSp2ZB2QwfQ/xfXJlDkRQkqeALQUl4XgJA-driver-scenic-road-view.jpg
+                              type: text
+                            file:
+                              type: file
+                              value: 14a121e9-5ed1-45b3-81ad-b72e9c27b9c4
+                            size:
+                              value: 200965
+                              type: number
+                            title:
+                              type: text
+                              value: driver-scenic-road-view.jpg
+                            width:
+                              value: 1024
+                              type: number
+                            height:
+                              value: 1024
+                              type: number
+                            mediaType:
+                              value: image/jpeg
+                              type: text
+                          _source: uniform-assets
+            parameters:
+              title:
+                type: text
+                locales:
+                  en-US: Find the Best Rates in Auto Insurance
+              subtitle:
+                type: text
+                locales:
+                  en-US: >-
+                    Enter your zip code below to get started. See how much you
+                    can save by switching today. Let Nova Insurance help keep
+                    you protected!
+              buttonText:
+                type: text
+                locales:
+                  en-US: GET QUOTE
+          - _id: 20515a38-541c-4f2c-9ce3-2fd6b77f18c3
+            type: coverageBlocks
+            slots:
+              blocks:
+                - _id: 63f32829-0c8f-4467-a919-647087337d14
+                  type: card
+                  parameters:
+                    title:
+                      type: text
+                      locales:
+                        en-US: Uninsured/Underinsured Motorist Coverage
+                    content:
+                      type: text
+                      locales:
+                        en-US: >-
+                          This coverage will respond to injuries that you or
+                          your passengers incur in an accident that is not your
+                          fault with an uninsured driver or a driver that does
+                          not have enough bodily injury liability coverage to
+                          cover the extent of your and your passengers' injuries
+                          in an accident. It helps cover medical expenses, lost
+                          wages, and other related costs.
+                - _id: 0ae6d00f-1771-4f6b-9676-e5cdfd1bf52c
+                  type: card
+                  parameters:
+                    title:
+                      type: text
+                      locales:
+                        en-US: Physical Damage Protection
+                    content:
+                      type: text
+                      locales:
+                        en-US: >-
+                          If your car is damaged in an accident, or stolen,
+                          vandalized, or damaged by fire or weather, the
+                          collision and comprehensive coverages on your policy
+                          will pay to repair or replace your vehicle if you have
+                          elected to carry these coverages. Each of these
+                          coverages has a deductible that you will need to be
+                          prepared to pay out-of-pocket before your insurance
+                          company responds to the claim.
+                - _id: 407ae30d-d797-4ade-a7ac-ffe27bdfafb3
+                  type: card
+                  parameters:
+                    title:
+                      type: text
+                      locales:
+                        en-US: Property Damage Liability Protection
+                    content:
+                      type: text
+                      locales:
+                        en-US: >-
+                          This type of coverage helps pay for damage you cause
+                          to someone else's vehicle or property in an accident.
+                          It can include things like cars, fences, buildings, or
+                          utility poles. It also covers legal defense costs if
+                          you're sued, up to the limits of your policy. Most
+                          states require this coverage as part of a minimum auto
+                          insurance policy.
+  _locales:
+    - en-US
+  _pattern: d073b2b5-09db-484a-9ad3-e35e1f2650f0
+created: '2025-12-03T08:37:45.28235+00:00'
+modified: '2025-12-03T08:58:27.563802+00:00'
+pattern: false
